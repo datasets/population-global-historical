@@ -1,0 +1,1 @@
+Global historical population data taken from the Appendix in Joel E. Cohen, *How Many People Can the Earth Support?*, Norton 1996, ISBN 0-393-31495-2.
