@@ -1,62 +1,74 @@
 {
   "name": "population-global-historical",
   "title": "Global Historical Population",
-  "sources":[{
-    "title": "Appendix in Joel E. Cohen, *How Many People Can the Earth Support?*, Norton 1996, ISBN 0-393-31495-2"
-  }],
-  "resources": [{
-    "path": "data/data.csv",
-    "profile": "tabular-data-resource",
-    "encoding": "utf-8",
-    "name": "data",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "schema": {
-      "fields": [
-      {
-        "name": "Year",
-        "type": "string"
-      },
-      {
-        "name": "Average",
-        "type": "number"
-      },
-      {
-        "name": "Deevey",
-        "type": "string"
-      },
-      {
-        "name": "McEvedy and Jones 1978",
-        "type": "integer"
-      },
-      {
-        "name": "Durand Low",
-        "type": "string"
-      },
-      {
-        "name": "Durand High",
-        "type": "string"
-      },
-      {
-        "name": "Clark",
-        "type": "string"
-      },
-      {
-        "name": "Biraben",
-        "type": "string"
-      },
-      {
-        "name": "Blaxter",
-        "type": "string"
-      },
-      {
-        "name": "UN",
-        "type": "string"
-      },
-      {
-        "name": "Kremer",
-        "type": "string"
-      }]
+  "sources":[
+    {
+      "title": "Appendix in Joel E. Cohen, *How Many People Can the Earth Support?*, Norton 1996, ISBN 0-393-31495-2"
     }
-  }]
+  ],
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+      "path": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "resources": [
+    {
+      "path": "data/data.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "name": "data",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Average",
+            "type": "number"
+          },
+          {
+            "name": "Deevey",
+            "type": "string"
+          },
+          {
+            "name": "McEvedy and Jones 1978",
+            "type": "integer"
+          },
+          {
+            "name": "Durand Low",
+            "type": "string"
+          },
+          {
+            "name": "Durand High",
+            "type": "string"
+          },
+          {
+            "name": "Clark",
+            "type": "string"
+          },
+          {
+            "name": "Biraben",
+            "type": "string"
+          },
+          {
+            "name": "Blaxter",
+            "type": "string"
+          },
+          {
+            "name": "UN",
+            "type": "string"
+          },
+          {
+            "name": "Kremer",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
 }
