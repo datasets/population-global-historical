@@ -70,5 +70,19 @@
         ]
       }
     }
+  ],
+  "views": [
+    {
+      "name": "graph",
+      "title": "Global Historical Population",
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "Year",
+        "series": [
+          "Average"
+        ]
+      }
+    }
   ]
 }
