@@ -15,7 +15,7 @@
   ],
   "resources": [
     {
-      "path": "data/data.csv",
+      "path": "data/population.csv",
       "profile": "tabular-data-resource",
       "encoding": "utf-8",
       "name": "data",
@@ -29,58 +29,54 @@
           },
           {
             "name": "Average",
-            "type": "number"
+            "type": "number",
+            "description": "Average number of people in millions"
           },
           {
             "name": "Deevey",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "McEvedy and Jones 1978",
-            "type": "integer"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Durand Low",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Durand High",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Clark",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Biraben",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Blaxter",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "UN",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           },
           {
             "name": "Kremer",
-            "type": "string"
+            "type": "number",
+            "description": "Number of people in millions"
           }
-        ]
-      }
-    }
-  ],
-  "views": [
-    {
-      "name": "graph",
-      "title": "Global Historical Population",
-      "specType": "simple",
-      "spec": {
-        "type": "line",
-        "group": "Year",
-        "series": [
-          "Average"
         ]
       }
     }
