@@ -84,7 +84,7 @@
   "views": [
     {
       "name": "population-global-historical",
-      "title": "Global historical population data since - 2000",
+      "title": "Global historical population data since 2000 BC",
       "resources": [
         {
           "name": "population",
