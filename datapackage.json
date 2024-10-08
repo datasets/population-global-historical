@@ -87,13 +87,7 @@
       "title": "Global historical population data since 2000 BC",
       "resources": [
         {
-          "name": "population",
-          "transform": [
-            {
-              "type": "filter",
-              "expression": "parseInt(data['Year']) > -2500"
-            }
-          ]
+          "name": "population"
         }
       ],
       "specType": "simple",
