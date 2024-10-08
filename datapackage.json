@@ -85,11 +85,7 @@
     {
       "name": "population-global-historical",
       "title": "Global historical population data since 2000 BC",
-      "resources": [
-        {
-          "name": "population"
-        }
-      ],
+      "resources": ["population"],
       "specType": "simple",
       "spec": {
         "type": "line",
