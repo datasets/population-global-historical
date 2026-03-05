@@ -1,27 +1,33 @@
-# Consolidate different population estimates into one single average value for
-# each year
 import csv
-infile = file('data.csv')
-outfile = file('out.csv', 'w')
-reader = csv.reader(infile)
-writer = csv.writer(outfile)
-outrows = []
+from pathlib import Path
+
 
 def avgpop(row):
     total = 0.0
-    numnonzero = 0
+    count = 0
     for col in row[2:]:
         if col:
-            numnonzero += 1
+            count += 1
             total += float(col)
-    return total/numnonzero
+    return total / count if count else None
 
-count = 0
-for row in reader:
-    if count != 0: # have header
-        # consolidated column is column 1 (remember start at 0)
-        row[1] = avgpop(row)
-    outrows.append(row)
-    count += 1
 
-writer.writerows(outrows)
+def main():
+    data_path = Path(__file__).resolve().parents[1] / "data" / "population.csv"
+    with data_path.open(newline="", encoding="utf-8") as infile:
+        rows = list(csv.reader(infile))
+
+    outrows = []
+    for idx, row in enumerate(rows):
+        if idx != 0:
+            value = avgpop(row)
+            row[1] = "" if value is None else str(value)
+        outrows.append(row)
+
+    with data_path.open("w", newline="", encoding="utf-8") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerows(outrows)
+
+
+if __name__ == "__main__":
+    main()
